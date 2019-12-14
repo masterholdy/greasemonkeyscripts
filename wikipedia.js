@@ -16,8 +16,10 @@
 })();
 
 function main(){
-    var id = "WMDE-Banner-Container"
+    var ids = ["WMDE-Banner-Container"];
 
-    var banner = document.getElementById(id);
-    banner.hidden = true
+    ids.forEach((id) => {
+        var banner = document.getElementById(id);
+        banner.hidden = true
+    });
 }
